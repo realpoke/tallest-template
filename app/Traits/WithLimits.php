@@ -2,7 +2,7 @@
 
 namespace App\Traits;
 
-use Exceptions\TooManyRequestsException;
+use App\Exceptions\TooManyRequestsException;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Validation\ValidationException;
 
