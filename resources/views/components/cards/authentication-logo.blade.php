@@ -1,5 +1,5 @@
-<a href="/" wire:navigate>
-    <svg class="w-16 h-16" viewBox="0 0 168 232" fill="none" xmlns="http://www.w3.org/2000/svg">
+<a href="{{ route('home') }}" wire:navigate>
+    <svg class="w-24 h-24 m-8" viewBox="0 0 168 232" fill="none" xmlns="http://www.w3.org/2000/svg">
         <style>
             .st0 {
                 fill: #fcca2b
