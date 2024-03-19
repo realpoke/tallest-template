@@ -64,3 +64,18 @@ test('it returns a 404 error when no markdown file is found', function () {
         $action($nonExistentFileName);
     })->toThrow(\Symfony\Component\HttpKernel\Exception\NotFoundHttpException::class);
 });
+
+test('can access the /doc endpoint for conditions', function () {
+    $response = $this->get('/doc/conditions');
+    $response->assertStatus(200);
+});
+
+test('can access the /doc endpoint for policy', function () {
+    $response = $this->get('/doc/policy');
+    $response->assertStatus(200);
+});
+
+test('can access the /doc endpoint for service', function () {
+    $response = $this->get('/doc/service');
+    $response->assertStatus(200);
+});
