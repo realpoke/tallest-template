@@ -1,66 +1,122 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Project Template Guide
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Welcome to the Tallest template repository! This template is designed to help you kick-start your own projects based on my setup.
+TALL based template to make a website, including FilamentPHP as an admin panel.
+Utilizing actions and contracts as the flow for efficient development.
 
-## About Laravel
+**TailwindCSS, AlpineJS, Laravel, Livewire, FilamentPHP**
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Getting Started
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+To use this template and create your own project, follow these steps:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1. Click the "Use this template" button at the top of the repository. You'll be prompted to create a new repository based on this template.
 
-## Learning Laravel
+2. Choose a name for your new repository and customize the repository details as needed.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+3. Clone your newly created repository to your local machine using Git:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+   ```sh
+   git clone https://github.com/your-username/your-repository.git
+   ```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+4. Navigate to the project directory:
+    ```sh
+    cd your-repository
+    ```
 
-## Laravel Sponsors
+5. Customize the project files, configuration, and content according to your needs. You can modify or add new files, update the README, and configure any settings.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+6. Commit your changes:
+    ```sh
+    git add .
+    git commit -m "Initial customization"
+    git push origin main
+    ```
 
-### Premium Partners
+7. Start developing your project! You're now ready to build upon the template and create your unique application.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## Programming
+This is a quick start guide!
 
-## Contributing
+### Software
+* PHP
+* Composer
+* Yarn / NPM
+* A database
+* GIT
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### PHP
+Required PHP version and extensions.
+* PHP >= 8.2
+* Ctype PHP Extension
+* cURL PHP Extension
+* DOM PHP Extension
+* Fileinfo PHP Extension
+* Filter PHP Extension
+* Hash PHP Extension
+* Mbstring PHP Extension
+* OpenSSL PHP Extension
+* PCRE PHP Extension
+* PDO PHP Extension
+* Session PHP Extension
+* Tokenizer PHP Extension
+* XML PHP Extension
 
-## Code of Conduct
+### Databases
+Pick a database to use and set it in the `.env` file.
+* MariaDB 10.3+, MySQL 5.7+
+* PostgreSQL 10.0+
+* SQLite 3.35.0+
+* SQL Server 2017+
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Setup
+After doing the following steps, you should be setup and ready to develop locally.
+1. Download the repo locally.
+2. Copy the `.env.example` into `.env`
+3. Fill in the `.env` file so that it fits your local development environment.
+5. Get node packages with either `yarn` or the NPM equivalent.
+6. Run composer with `composer install` to set up all PHP packages
+7. Make sure to link the storage to public using `php artisan storage:link`.
+8. Make sure your database is running.
+9. Run database migrations with `php artisan migrate`.
+10. Start vite with `yarn dev` or the NPM equivalent.
+11. Start your website `php artisan serve`, and go to the URL shown.
 
-## Security Vulnerabilities
+## Tallest documentation
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Here you find the documentation resources for the Tallest stack.
+
+**TailwindCSS, AlpineJS, Laravel, Livewire, FilamentPHP**
+
+1. **Tailwind CSS:** _v3_
+   - [Official Documentation](https://tailwindcss.com/docs)
+   - [Tailwind CSS GitHub Repository](https://github.com/tailwindcss/tailwindcss)
+
+2. **Alpine.js:** _v3_
+   - [Official Documentation](https://alpinejs.dev/start-here)
+   - [Alpine.js GitHub Repository](https://github.com/alpinejs/alpine)
+
+3. **Laravel:** _v11_
+   - [Official Documentation](https://laravel.com/docs)
+   - [Laravel GitHub Repository](https://github.com/laravel/laravel)
+
+4. **Livewire:** _v3_
+   - [Official Documentation](https://livewire.laravel.com/docs/)
+   - [Livewire GitHub Repository](https://github.com/livewire/livewire)
+
+5. **FilamentPHP:** _v3_
+   - [Official Documentation](https://filamentphp.com/docs)
+   - [FilamentPHP GitHub Repository](https://github.com/filamentphp/filament)
+
+These resources provide comprehensive guides, tutorials, and references for each technology in the Tallest stack. Feel free to explore and leverage these tools to build powerful and dynamic web applications.
+
+## Feedback and Support
+
+If you encounter any issues or have questions, feel free to open an [issue](https://github.com/realpoke/tallest-template/issues) on this repository.
+
+I hope this template helps you get started on your project. Happy coding!
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is licensed under the [MIT license](https://opensource.org/licenses/MIT) - see the LICENSE file for details.
