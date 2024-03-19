@@ -10,7 +10,7 @@ class GetMarkdownFile implements GetsMarkdownFileContract
 {
     public function __invoke(string $name): string
     {
-        $localName = app()->getLocale().$name;
+        $localName = $name.'_'.app()->getLocale();
 
         $path = Arr::first([
             resource_path('markdown/'.$localName.'.md'),
