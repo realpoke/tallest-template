@@ -43,6 +43,9 @@ class RolesAndPermissionsSeeder extends Seeder
             }
         }
 
+        if (User::whereEmail('admin@mail.com')->exists()) {
+            return;
+        }
         User::factory()
             ->create(['name' => 'Admin', 'email' => 'admin@mail.com'])
             ->assignRole('admin');
