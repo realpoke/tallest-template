@@ -79,9 +79,12 @@ After doing the following steps, you should be setup and ready to develop locall
 6. Run composer with `composer install` to set up all PHP packages
 7. Make sure to link the storage to public using `php artisan storage:link`.
 8. Make sure your database is running.
-9. Run database migrations with `php artisan migrate`.
-10. Start vite with `yarn dev` or the NPM equivalent.
-11. Start your website `php artisan serve`, and go to the URL shown.
+9. Generate app key `php artisan key:generate`.
+10. Run database migrations with `php artisan migrate`.
+11. Seed roles, permissions and admin `php artisan db:seed`.
+11. Start vite with `yarn dev` or the NPM equivalent.
+12. Start your website `php artisan serve`, and go to the URL shown.
+13. Login with the admin user `admin@mail.com`, password `password`.
 
 ## Tallest documentation
 
