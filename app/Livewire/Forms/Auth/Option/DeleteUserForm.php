@@ -7,6 +7,8 @@ use Livewire\Form;
 
 class DeleteUserForm extends Form
 {
+    use AuthRules;
+
     public bool $confirmingUserDeletion = false;
 
     public string $password = '';
