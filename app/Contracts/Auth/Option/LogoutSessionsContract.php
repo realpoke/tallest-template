@@ -6,7 +6,7 @@ use App\Livewire\Forms\Auth\Option\LogoutSessionsForm;
 
 interface LogoutSessionsContract
 {
-    public function __invoke(LogoutSessionsForm $form);
+    public function logout(LogoutSessionsForm $form);
 
     public function isDatabaseSession(): bool;
 }

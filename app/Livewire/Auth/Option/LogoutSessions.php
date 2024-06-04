@@ -39,7 +39,7 @@ class LogoutSessions extends Component
     {
         $this->limitTo(10, 'form.password', 'logout other sessions');
 
-        $this->sessionManager->__invoke($this->form);
+        $this->sessionManager->logout($this->form);
 
         $this->dispatch('logged-out');
     }

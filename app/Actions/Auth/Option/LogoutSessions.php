@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 
 class LogoutSessions implements LogoutSessionsContract
 {
-    public function __invoke(LogoutSessionsForm $form)
+    public function logout(LogoutSessionsForm $form)
     {
         if (! $this->isDatabaseSession()) {
             return;
